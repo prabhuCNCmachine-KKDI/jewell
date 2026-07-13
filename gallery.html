@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design Gallery & Videos – Prabhu CNC Laser Machine Cutting</title>
+<meta name="description" content="ஹேண்ட்மேட், CNC, கடா மற்றும் கூடுதல் வளையல் வடிவமைப்புகள் மற்றும் கட்டிங் வீடியோக்கள் – Prabhu CNC Laser Machine Cutting">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:wght@300;400;500;600&family=Noto+Sans+Tamil:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-brand">
+    <img src="images/brand/logo.png" alt="Prabhu CNC Laser Machine Cutting logo" class="nav-logo">
+    <div class="nav-brand-text">
+      <span class="nav-brand-main">PRABHU CNC LASER MACHINE CUTTING</span>
+      <span class="nav-brand-sub">CNC & Laser Jewelry Cutting</span>
+    </div>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html#about">எங்களை பற்றி</a></li>
+    <li><a href="index.html#services">சேவைகள்</a></li>
+    <li><a href="#gallery">வடிவங்கள்</a></li>
+    <li><a href="#videos">வீடியோக்கள்</a></li>
+    <li><a href="index.html#process">செயல்முறை</a></li>
+    <li><a href="contact.html">தொடர்பு</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta desktop-only">தொடர்பு கொள்ளுங்கள்</a>
+  <div class="hamburger" id="hamburger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<section id="gallery">
+  <div class="gallery-header reveal">
+    <div class="section-label">வடிவங்கள் | GALLERY</div>
+    <h2 class="section-title">Our Design Portfolio</h2>
+    <div style="display:inline-flex;align-items:center;gap:0.4rem;background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.25);padding:0.3rem 0.75rem;margin-top:0.75rem;font-family:var(--font-tamil);font-size:0.7rem;color:var(--gold);letter-spacing:0.08em;">
+      ✦ ACTUAL PRODUCT PHOTOS
+    </div>
+    <div class="gold-line"><span>◆</span></div>
+  </div>
+
+  <div class="gallery-tabs reveal">
+    <button class="gallery-tab active" data-category="handmade" onclick="switchGallery('handmade', this)">Hand Made Bangle Design</button>
+    <button class="gallery-tab" data-category="cnc" onclick="switchGallery('cnc', this)">CNC Bangle Design</button>
+    <button class="gallery-tab" data-category="kada" onclick="switchGallery('kada', this)">Kada Design</button>
+    <button class="gallery-tab" data-category="extra" onclick="switchGallery('extra', this)">Extra Design Model</button>
+  </div>
+  <div class="gallery-meta reveal"><span id="galleryMetaText">Hand Made Bangle Design — Loading...</span></div>
+
+  <div class="gallery-grid reveal" id="galleryGrid"></div>
+</section>
+
+<section id="videos">
+  <div class="gallery-header reveal">
+    <div class="section-label">வீடியோக்கள் | VIDEOS</div>
+    <h2 class="section-title">Cutting Process & Machine Demos</h2>
+    <div style="display:inline-flex;align-items:center;gap:0.4rem;background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.25);padding:0.3rem 0.75rem;margin-top:0.75rem;font-family:var(--font-tamil);font-size:0.7rem;color:var(--gold);letter-spacing:0.08em;">
+      ✦ LIVE CNC & LASER CUTTING FOOTAGE
+    </div>
+    <div class="gold-line"><span>◆</span></div>
+  </div>
+
+  <div class="videos-grid reveal" id="videosGrid"></div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand-name">PRABHU CNC LASER MACHINE CUTTING</div>
+      <div class="footer-tagline">தரம் • துல்லியம் • நம்பிக்கை</div>
+      <p class="footer-desc">தங்க நகை வடிவமைப்பில் நவீன CNC மற்றும் LASER தொழில்நுட்பம் மூலம் சிறந்த சேவை வழங்குகிறோம். உங்கள் கனவு நகையை நிஜமாக்குகிறோம்.</p>
+      <div class="footer-social">
+        <a href="#" class="social-icon" aria-label="Facebook">f</a>
+        <a href="#" class="social-icon" aria-label="Instagram">ig</a>
+        <a href="#" class="social-icon" aria-label="YouTube">yt</a>
+        <a href="https://wa.me/919965988885" class="social-icon" aria-label="WhatsApp">wa</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Quick Links</div>
+      <ul class="footer-links">
+        <li><a href="index.html#about">எங்களை பற்றி</a></li>
+        <li><a href="index.html#services">சேவைகள்</a></li>
+        <li><a href="#gallery">வடிவங்கள்</a></li>
+        <li><a href="#videos">வீடியோக்கள்</a></li>
+        <li><a href="index.html#process">செயல்முறை</a></li>
+        <li><a href="index.html#testimonials">கருத்துகள்</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Services</div>
+      <ul class="footer-links">
+        <li><a href="index.html#services">Chain Design</a></li>
+        <li><a href="index.html#services">Ring Design</a></li>
+        <li><a href="index.html#services">Bangle Design</a></li>
+        <li><a href="index.html#services">CNC Cutting</a></li>
+        <li><a href="index.html#services">Laser Engraving</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Contact Info</div>
+      <div class="footer-contact-item"><span>📞</span><span>+91 99659 88885</span></div>
+      <div class="footer-contact-item"><span>✉</span><span>prabhulasermachine@gmail.com</span></div>
+      <div class="footer-contact-item"><span>📍</span><span>KARAIKUDI, TAMILNADU</span></div>
+      <div class="footer-contact-item"><span>⏰</span><span>திங்கள் – சனி: 9AM – 7PM</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 Prabhu CNC Laser Machine Cutting. All Rights Reserved.</div>
+    <div class="footer-motto">தரம் • துல்லியம் • நம்பிக்கை</div>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <button id="lightbox-close" onclick="closeLightbox()">✕</button>
+  <button id="lightbox-prev" class="lightbox-nav" aria-label="Previous image">‹</button>
+  <img id="lightbox-img" src="" alt="">
+  <button id="lightbox-next" class="lightbox-nav" aria-label="Next image">›</button>
+  <div id="lightbox-caption"></div>
+</div>
+
+<!-- FLOATING WHATSAPP -->
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/919965988885" id="whatsapp-float" target="_blank" aria-label="WhatsApp">
+  💬
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
